@@ -3,6 +3,9 @@ package com.example.claseseguimientoexam
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import androidx.lifecycle.LiveData
 import kotlinx.android.synthetic.main.activity_inicio_sistema.*
@@ -69,5 +72,32 @@ class InicioSistema : AppCompatActivity() {
             val intent = Intent(this, ListaCarreras::class.java)
             startActivity(intent)
         }
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.multioptions_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.registrar -> {
+                startActivity(Intent(this, RegistroNuevo::class.java))
+            }
+            R.id.registraradm -> {
+                startActivity(Intent(this, NuevoAdmin::class.java))
+            }
+            R.id.libronuevo -> {
+                startActivity(Intent(this, NuevoLibro::class.java))
+            }
+            R.id.carreranueva -> {
+                startActivity(Intent(this, RegistroCarrera::class.java))
+            }
+
+            R.id.map -> {
+                startActivity(Intent(this, mapafijo::class.java))
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
