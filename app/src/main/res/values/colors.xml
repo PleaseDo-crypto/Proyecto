@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#1F3811</color>
+    <color name="purple_700">#000301</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="colorA">#3F51B5</color>
+    <color name="colorB">#FFEB3B</color>
+    <color name="colorC">#E91E63</color>
+    <color name="colorD">#FF5722</color>
+    <color name="Biblio">#94BDC1</color>
+</resources>

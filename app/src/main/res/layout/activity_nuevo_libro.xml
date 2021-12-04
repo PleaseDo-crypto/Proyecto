@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo31"
+    tools:context=".NuevoLibro">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:text="Nuevo Libro"
+    android:textColor="#000000"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/textView2"
+android:layout_width="186dp"
+android:layout_height="42dp"
+android:layout_marginTop="64dp"
+android:text="Agregar una Foto :"
+android:textAlignment="center"
+android:textColor="#484A47"
+android:textSize="20sp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.124"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/registrar_libro"
+        android:layout_width="169dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922" />
+
+    <ImageView
+        android:id="@+id/foto_carrera"
+        android:layout_width="114dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.059"
+        tools:srcCompat="@drawable/placeholder" />
+
+
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/libro_titulo"
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginStart="10dp"
+android:layout_marginEnd="10dp"
+app:counterEnabled="true"
+app:counterMaxLength="255"
+app:helperTextTextColor="#FB0000"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.342">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/titilolibro"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Titilo del Libro"
+    android:inputType="textPersonName|text|textEmailAddress"
+    android:maxLength="255" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/libro_autor"
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginStart="10dp"
+android:layout_marginEnd="10dp"
+app:counterEnabled="true"
+app:counterMaxLength="255"
+app:helperTextTextColor="#FB0000"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.499">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/autorlibro"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Autor"
+    android:inputType="textPersonName|text|textEmailAddress"
+    android:maxLength="255" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/libro_genero"
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginStart="10dp"
+android:layout_marginEnd="10dp"
+app:counterEnabled="true"
+app:counterMaxLength="255"
+app:helperTextTextColor="#FF0000"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.662">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/generolibro"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Genero"
+    android:inputType="textPersonName|text|textEmailAddress" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/libro_sinopsis"
+style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginStart="10dp"
+android:layout_marginEnd="10dp"
+app:counterEnabled="true"
+app:counterMaxLength="255"
+app:helperTextTextColor="#F80000"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.815">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/sinopsislibro"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Sinopsis"
+    android:inputType="textPersonName|text|textEmailAddress"
+    android:maxLength="255" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<ImageView
+android:id="@+id/imageView4"
+android:layout_width="408dp"
+android:layout_height="30dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="1.0"
+app:srcCompat="@drawable/abajo1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

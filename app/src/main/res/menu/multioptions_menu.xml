@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/registrar"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Registrar"
+         />
+    <item
+        android:id="@+id/registraradm"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Registrar Administrador"
+        />
+    <item
+        android:id="@+id/libronuevo"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Nuevo Libro"
+        />
+    <item
+        android:id="@+id/carreranueva"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Nueva Carrera"
+        />
+    <item
+        android:id="@+id/maps"
+        android:title="Google Maps">
+        <menu>
+            <item
+                android:id="@+id/map"
+                android:title="Mapa Casa" />
+        </menu>
+    </item>
+
+</menu>
