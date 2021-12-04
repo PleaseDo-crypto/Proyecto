@@ -66,15 +66,17 @@
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.147" />
 
     <TextView
         android:id="@+id/nomcarr_detall"
         android:layout_width="181dp"
         android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -90,6 +92,8 @@
         android:id="@+id/edificio_detall"
         android:layout_width="241dp"
         android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -105,6 +109,7 @@
         android:id="@+id/coor_detall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -119,14 +124,17 @@
         android:id="@+id/cutri_detall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:text="TextView"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/coor_detall"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776" />
 
     <TextView
         android:id="@+id/textView3"
@@ -145,11 +153,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre de carrera:"
-        app:layout_constraintBottom_toTopOf="@+id/nomcarr_detall"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969" />
+        app:layout_constraintVertical_bias="0.365" />
 
     <TextView
         android:id="@+id/textView7"
@@ -158,12 +167,12 @@
         android:layout_marginBottom="20dp"
         android:text="Coordinador:"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/coor_detall"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.614" />
 
     <TextView
         android:id="@+id/textView8"
@@ -172,11 +181,11 @@
         android:layout_marginBottom="8dp"
         android:text="Cuatrimestre:"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/cutri_detall"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.732" />
 
     <ImageView
         android:id="@+id/imageView7"
